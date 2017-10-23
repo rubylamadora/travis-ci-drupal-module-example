@@ -20,7 +20,6 @@ mysql:
 before_install:
   - phpenv config-rm xdebug.ini
   - echo 'date.timezone = "Australia/Melbourne"' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
-  - composer --dev install
 
 install:
   # install php packages required for running a web server from drush on php 5.3
